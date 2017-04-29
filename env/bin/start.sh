@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# ssh
-(cd ~; ssh-keygen -t rsa; cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys)
-
 # env
 source ./config.sh
 source ./set-env.sh
