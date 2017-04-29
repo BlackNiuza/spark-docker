@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ROOT_DIR=/home/admin/
-
 # config
 HADOOP_CONFIG_DIR=${ROOT_DIR}/conf/hadoop
 

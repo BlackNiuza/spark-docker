@@ -1,12 +1,15 @@
 #!/bin/bash
 
+export ROOT_DIR=/home/admin/
+
 # env
-source ./config.sh
-source ./set-env.sh
+source ${ROOT_DIR}/bin/config.sh
+source ${ROOT_DIR}/bin/set-env.sh
 
 # hadoop
 hdfs namenode -format
-sh ${HADOOP_DIR}/sbin/start-all.sh
+bash ${HADOOP_DIR}/sbin/start-dfs.sh
+bash ${HADOOP_DIR}/sbin/start-yarn.sh
 
 
 echo 'jps=========='

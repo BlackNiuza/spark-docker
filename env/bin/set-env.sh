@@ -1,9 +1,6 @@
 #!/bin/bash
 
-source ./config.sh
-
-# ssh
-cp ${ROOT_DIR}/ssh/* ~/.ssh/
+source ${ROOT_DIR}/bin/config.sh
 
 # java scala
 export JAVA_HOME=${JAVA_DIR}
