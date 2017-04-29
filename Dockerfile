@@ -1,6 +1,7 @@
-FROM ubuntu/ubuntu
+FROM ubuntu
 
 # setup env
+RUN adduser admin
 USER admin
 WORKDIR /home/admin
 VOLUME /home/admin/logs
